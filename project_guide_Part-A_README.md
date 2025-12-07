@@ -165,35 +165,6 @@ Executed Terraform commands:
 ⚪ Containerized and deployed application on AWS
 
 
-**📸 Screenshots:**
-
-⚪ Pipeline Screenshot
-
-<img width="940" height="454" alt="image" src="https://github.com/user-attachments/assets/0162cfde-05a8-45f0-970e-1ef02aa173e6" />
-
-⚪ Terraform Infra Screenshot
-
-<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/31bfdd6f-ac51-460b-90f4-fd23752a558c" />
-
-⚪ Ansible Run Screenshot:
-
-<img width="940" height="369" alt="image" src="https://github.com/user-attachments/assets/0cbc3b67-8964-4869-9b82-bd7fa2ff8f2d" />
-
-<img width="940" height="527" alt="image" src="https://github.com/user-attachments/assets/fcefcd9c-2e15-40a3-9791-66b3e955708e" />
-
-<img width="940" height="395" alt="image" src="https://github.com/user-attachments/assets/9de300e8-848d-47bb-9b4e-2d1b2991a0ee" />
-
-⚪ Jira & Slack Notification:
-
-<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/08b1b3c5-6606-4b14-afbe-6c3f027b9449" />
-
-<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/6290406c-e4d7-41d5-8a25-e982a5551c1d" />
-
-<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/f1426a4d-ced0-4104-b1bd-667b54ea0cf5" />
-
-
-
-
 
  🧪 How to Run: 
  
@@ -248,43 +219,40 @@ o	Prepare the environment for deployment.
 
 •	Ensure the instance is reachable and ready for the application.
 ________________________________________
-6️⃣ Build & Push Application Image
 
-•	Build the Docker image of the application.
 
-•	Push the image to AWS ECR so Jenkins can pull it during deployment.
 
-•	Verify that the image is available in the ECR repository.
+**📸 Screenshots:**
 
-________________________________________
-7️⃣ Execute Full Jenkins Pipeline
+⚪ Pipeline Screenshot
 
-•	Trigger the Jenkins pipeline or let it trigger automatically via GitHub webhook.
+<img width="940" height="454" alt="image" src="https://github.com/user-attachments/assets/0162cfde-05a8-45f0-970e-1ef02aa173e6" />
 
-•	The pipeline will:
-o	Pull the latest code
-o	Build and package the application
-o	Push the Docker image to ECR
-o	Deploy it to the configured EC2 instance using Ansible
+⚪ Terraform Infra Screenshot
 
-•	Monitor each stage from the Jenkins dashboard.
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/31bfdd6f-ac51-460b-90f4-fd23752a558c" />
 
-________________________________________
-8️⃣ Access the Deployed Application
+⚪ Ansible Run Screenshot:
 
-•	Once deployment succeeds, open the application in your browser using:
-EC2 Public IP or Load Balancer URL
+<img width="940" height="369" alt="image" src="https://github.com/user-attachments/assets/0cbc3b67-8964-4869-9b82-bd7fa2ff8f2d" />
 
-•	Confirm the application is running as expected.
-________________________________________
-9️⃣ Close the Project
+<img width="940" height="527" alt="image" src="https://github.com/user-attachments/assets/fcefcd9c-2e15-40a3-9791-66b3e955708e" />
 
-•	Mark the Jira ticket as Resolved/Done.
+<img width="940" height="395" alt="image" src="https://github.com/user-attachments/assets/9de300e8-848d-47bb-9b4e-2d1b2991a0ee" />
 
-•	Leave a comment summarizing the work completed.
+⚪ Jira & Slack Notification:
 
-•	Notify the team on Slack:
-“Deployment completed successfully.”
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/08b1b3c5-6606-4b14-afbe-6c3f027b9449" />
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/6290406c-e4d7-41d5-8a25-e982a5551c1d" />
+
+<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/f1426a4d-ced0-4104-b1bd-667b54ea0cf5" />
+
+**⚪ Conclusion**
+Part A covers the planning and implementation phases of the CI/CD workflow — including Jira task setup, Slack collaboration, Jenkins pipeline creation, Git version control, Docker image development, Terraform-based infrastructure provisioning, and Ansible configuration.
+
+This part lays the foundation for the final deployment stage covered in **Part B**.
+
 
    
 
